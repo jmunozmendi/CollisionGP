@@ -21,7 +21,6 @@ def main():
     info = collision_checker.predict(x_test)
 
     result = np.logical_and(info.decision, y_test)
-    print(np.sum(result)/len(y_test))
 
 
 if __name__ == '__main__':
